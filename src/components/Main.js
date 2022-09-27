@@ -6,7 +6,8 @@ import Show from "../pages/Show";
 function Main(props) {
   const [ people, setPeople ] = useState(null);
 
-  const URL = "http://localhost:4000/people/";
+  const URL = 'https://mern-stack-peoples.herokuapp.com/people/'
+  // const URL = "http://localhost:4000/people/";
 
   const getPeople = async () => {
     const response = await fetch(URL);
